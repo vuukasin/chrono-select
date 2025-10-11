@@ -18,13 +18,33 @@
   "scripts": {
     "build": "tsup src",
     "dev": "tsup src --watch",
+    "lint": "tsc --noEmit",
     "clean": "rm -rf dist node_modules",
     "ci": "pnpm run build",
     "release": "pnpm run build && changeset publish"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "description": "Fast, unstyled, keyboard accessible date picker for React",
+  "keywords": [
+    "react",
+    "date-picker",
+    "datepicker",
+    "calendar",
+    "unstyled",
+    "headless",
+    "accessible",
+    "keyboard-navigation",
+    "typescript"
+  ],
+  "author": "vuukasin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vuukasin/chrono-select.git"
+  },
+  "homepage": "https://dp.vukasin.me",
+  "bugs": {
+    "url": "https://github.com/vuukasin/chrono-select/issues"
+  },
   "devDependencies": {
     "@types/react": "^18.2.61",
     "typescript": "^5"
