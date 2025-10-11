@@ -10,7 +10,8 @@
     "website": "pnpm --filter chrono-select-website dev",
     "preinstall": "npx only-allow pnpm",
     "format": "prettier '**/*.{js,jsx,ts,tsx,json,md,mdx,css,scss,yaml,yml}' --write",
-    "test:format": "prettier '**/*.{js,jsx,ts,tsx,json,md,mdx,css,scss,yaml,yml}' --check"
+    "test:format": "prettier '**/*.{js,jsx,ts,tsx,json,md,mdx,css,scss,yaml,yml}' --check",
+    "release": "pnpm run build && changeset publish"
   },
   "keywords": [],
   "author": "",
